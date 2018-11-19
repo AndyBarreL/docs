@@ -357,15 +357,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ip-addresses" title="IP addresses" class="md-nav__link">
-    IP addresses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#webhook-notifications" title="Webhook notifications" class="md-nav__link">
-    Webhook notifications
+  <a href="#white-list-ip-addresses" title="White-list IP addresses" class="md-nav__link">
+    White-list IP addresses
   </a>
   
 </li>
@@ -781,15 +774,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ip-addresses" title="IP addresses" class="md-nav__link">
-    IP addresses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#webhook-notifications" title="Webhook notifications" class="md-nav__link">
-    Webhook notifications
+  <a href="#white-list-ip-addresses" title="White-list IP addresses" class="md-nav__link">
+    White-list IP addresses
   </a>
   
 </li>
@@ -822,21 +808,13 @@
                 
                 <h1 id="domains-and-ip-addresses">Domains and IP Addresses<a class="headerlink" href="#domains-and-ip-addresses" title="Permanent link">&para;</a></h1>
 <p>Your integration must be able to reach any of PayCore’s fully qualified  <a href="#domains">domain names</a>  for it to function properly. Depending on how your integration operates, you may need to whitelist them.</p>
-<p>To help your integration operate securely, it must also verify that it’s communicating with  <strong>api.paycore.com</strong>  through one of our listed  <a href="#ip-addresses">IP addresses</a>.</p>
-<p>If your integration also receives  <a href="/webhooks">webhooks</a>  from PayCore, you should ensure these events originate from one of our <a href="#webhook-notifications">webhook IP addresses</a>.</p>
+<p>To help your integration operate securely, it must also verify that it’s communicating with  <strong>api.paycore.io</strong>  through SSL certificate on it and DNS IP address.</p>
+<p>For correct communication between PayCore and Payment Providers or third-party services what PayCore have access to, use <a href="#white-list-ip-addresses">PayCore white-list IP addresses</a>.</p>
 <h2 id="domains">Domains<a class="headerlink" href="#domains" title="Permanent link">&para;</a></h2>
 <p>PayCore uses the following fully qualified domain names to interact with your integration:</p>
 <div class="codehilite"><pre><span></span>api.paycore.io
 checkout.paycore.io
-js.paycore.io
-</pre></div>
-
-
-<h2 id="ip-addresses">IP addresses<a class="headerlink" href="#ip-addresses" title="Permanent link">&para;</a></h2>
-<p>The full list of IP addresses that  <strong>api.paycore.io</strong>  may resolve to is:</p>
-<div class="codehilite"><pre><span></span>54.36.117.30
-51.38.147.254
-54.38.139.222
+hp.paycore.io
 </pre></div>
 
 
@@ -844,8 +822,8 @@ js.paycore.io
 <p class="admonition-title">Warning</p>
 <p>Always use the <strong>api.paycore.io</strong> DNS name to contact our API—never an IP address.</p>
 </div>
-<h2 id="webhook-notifications">Webhook notifications<a class="headerlink" href="#webhook-notifications" title="Permanent link">&para;</a></h2>
-<p>The full list of IP addresses that webhook notifications may come from is:</p>
+<h2 id="white-list-ip-addresses">White-list IP addresses<a class="headerlink" href="#white-list-ip-addresses" title="Permanent link">&para;</a></h2>
+<p>The full list of IP addresses that PayCore use to interact with Payment Providers &amp; third-party services:</p>
 <div class="codehilite"><pre><span></span>54.36.117.30
 51.38.147.254
 54.38.139.222
@@ -855,10 +833,8 @@ js.paycore.io
 <h2 id="downloading-ip-address-lists">Downloading IP address lists<a class="headerlink" href="#downloading-ip-address-lists" title="Permanent link">&para;</a></h2>
 <p>As a convenience, both lists are available in other formats for easy import into <code>iptables</code> or similar tools:</p>
 <ul>
-<li><a href="https://paycore.io/files/ips/ips_api.txt">https://paycore.io/files/ips/ips_api.txt</a></li>
-<li><a href="https://paycore.io/files/ips/ips_api.json">https://paycore.io/files/ips/ips_api.json</a></li>
-<li><a href="https://paycore.io/files/ips/ips_webhooks.txt">https://paycore.io/files/ips/ips_webhooks.txt</a></li>
-<li><a href="https://paycore.io/files/ips/ips_webhooks.json">https://paycore.io/files/ips/ips_webhooks.json</a></li>
+<li><a href="/ips/ips_access.txt">https://docs.paycore.io/ips/ips_access.txt</a></li>
+<li><a href="/ips/ips_access.json">https://docs.paycore.io/ips/ips_access.json</a></li>
 </ul>
                 
                   

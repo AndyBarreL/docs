@@ -36,7 +36,7 @@
     
     
       
-        <title>Connect manual - Documentation</title>
+        <title>Overview - Documentation</title>
       
     
     
@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="">
+        <meta name="theme-color" content="#3f51b5">
       
     
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="white">
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#introdution" tabindex="1" class="md-skip">
+      <a href="#overview" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -125,7 +125,7 @@
                 Documentation
               </span>
               <span class="md-header-nav__topic">
-                Connect manual
+                Overview
               </span>
             
           
@@ -195,6 +195,101 @@
         
       
       
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../.." title="Home" class="md-tabs__link">
+          Home
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../getting-started/overview/" title="Getting started" class="md-tabs__link">
+          Getting started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../payment-gateway/overview/" title="Products" class="md-tabs__link">
+          Products
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../#" title="Providers" class="md-tabs__link">
+          Providers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../commerce/overview.md" title="Add-ons" class="md-tabs__link">
+          Add-ons
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+      <li class="md-tabs__item">
+        <a href="https://redoc.paycore.io/" title="Full API Reference" class="md-tabs__link" target="_blank">
+            <i class="md-icon">launch</i>
+            Full API Reference
+        </a>
+      </li>    
+    </ul>
+    </div>
+</nav>
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -241,10 +336,46 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../.." title="Home" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
       Home
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Introduction" class="md-nav__link">
+      Introduction
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -279,6 +410,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../getting-started/ips/" title="Public IPs" class="md-nav__link">
+      Public IPs
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -288,16 +431,37 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
-      Payment gateway
+      Products
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
+        Products
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Payment gateway
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
         Payment gateway
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -309,9 +473,133 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../payment-gateway/overview/" title="Overview" class="md-nav__link">
+    <a href="../../payment-gateway/overview/" title="Overview" class="md-nav__link">
       Overview
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Payout gateway
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Payout gateway
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payout-gateway/overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Currency rates
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Currency rates
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Overview" class="md-nav__link md-nav__link--active">
+      Overview
+    </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      HPP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        HPP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hpp/overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -330,11 +618,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Payout gateway
+      Providers
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        Payout gateway
+        Providers
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -345,8 +633,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../payout-gateway/overview/" title="Overview" class="md-nav__link">
-      Overview
+    <a href="../../../#" title="Page1" class="md-nav__link">
+      Page1
     </a>
   </li>
 
@@ -366,11 +654,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      Currency rates
+      Add-ons
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        Currency rates
+        Add-ons
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -378,35 +666,18 @@
           
           
           
-
-
-  <li class="md-nav__item">
-    <a href="../../../currency-rates/overview/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
 
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
     
-    <label class="md-nav__link" for="nav-6">
-      HPP
+    <label class="md-nav__link" for="nav-5-1">
+      Commerce
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        HPP
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        Commerce
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -417,7 +688,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../hpp/overview/" title="Overview" class="md-nav__link">
+    <a href="../../../commerce/overview.md" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -427,45 +698,22 @@
     </nav>
   </li>
 
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
-    
-    <label class="md-nav__link" for="nav-7">
-      Payment Providers
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
-        Payment Providers
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
         
           
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
-    <label class="md-nav__link" for="nav-7-1">
-      Liqpay
+    <label class="md-nav__link" for="nav-5-2">
+      Store
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-1">
-        Liqpay
+      <label class="md-nav__title" for="nav-5-2">
+        Store
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -474,20 +722,47 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Connect manual" class="md-nav__link md-nav__link--active">
-      Connect manual
+  <li class="md-nav__item">
+    <a href="../../../store/overview.md" title="Overview" class="md-nav__link">
+      Overview
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
     
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Exchanger
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        Exchanger
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../exchanger/overview.md" title="Overview" class="md-nav__link">
+      Overview
+    </a>
   </li>
 
         
@@ -498,30 +773,6 @@
         
       </ul>
     </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../../release-notes/" title="Release Notes" class="md-nav__link">
-      Release Notes
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="https://redoc.paycore.io/" title="Full API Reference" class="md-nav__link">
-      Full API Reference
-    </a>
   </li>
 
     
@@ -552,41 +803,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/paycoreio/edit/master/docs/payment-providers/liqpay/connect-manual.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/paycoreio/edit/master/docs/products/currency-rates/overview.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="introdution">Introdution<a class="headerlink" href="#introdution" title="Permanent link">&para;</a></h1>
-<p>Please setup Liqpay account in dashboard - 
-<a href="https://www.liqpay.ua/" target="_blank">https://www.liqpay.ua/</a></p>
-<h1 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h1>
-<h2 id="step-1-open-your-liqpay-account-settings"><strong>Step 1: Open your Liqpay account settings</strong><a class="headerlink" href="#step-1-open-your-liqpay-account-settings" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.liqpay.ua/en/admin/business" target="_blank">https://www.liqpay.ua/en/admin/business</a></p>
-<p><a href="../images/liqpay-step1.png"><img alt="Step 1" src="../images/liqpay-step1.png" /></a></p>
-<h2 id="step-2-go-to-api-section"><strong>Step 2: Go to "API" section </strong><a class="headerlink" href="#step-2-go-to-api-section" title="Permanent link">&para;</a></h2>
-<p><a href="../images/liqpay-step2.png"><img alt="Step 2" src="../images/liqpay-step2.png" /></a></p>
-<h2 id="step-3-set-up-parameters"><strong>Step 3: Set up parameters </strong><a class="headerlink" href="#step-3-set-up-parameters" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Availability of order_id</strong></li>
-<li><strong>Signature availability (signature)</strong></li>
-</ul>
-<p><a href="../images/liqpay-step3.png"><img alt="Step 3" src="../images/liqpay-step3.png" /></a></p>
-<h2 id="step-4-enter-trusted-ip-adresses-from-paycore-trusted-ip"><strong>Step 4: Enter Trusted IP adresses from <a href="https://url" target="_blank">PayCore Trusted IP</a></strong><a class="headerlink" href="#step-4-enter-trusted-ip-adresses-from-paycore-trusted-ip" title="Permanent link">&para;</a></h2>
-<p><a href="../images/liqpay-step4.png"><img alt="Step 4" src="../images/liqpay-step4.png" /></a></p>
-<h2 id="step-5-save-settings-copy-public-and-private-keys"><strong>Step 5: Save settings. Copy Public and Private keys</strong><a class="headerlink" href="#step-5-save-settings-copy-public-and-private-keys" title="Permanent link">&para;</a></h2>
-<p><a href="../images/liqpay-step5.png"><img alt="Step 5" src="../images/liqpay-step5.png" /></a></p>
-<h2 id="step-6-sing-in-to-paycore-dashboard"><strong>Step 6: Sing in to PayCore Dashboard</strong><a class="headerlink" href="#step-6-sing-in-to-paycore-dashboard" title="Permanent link">&para;</a></h2>
-<p><a href="https://dashboard.paycore.io/" target="_blank">https://dashboard.paycore.io/</a></p>
-<p><a href="../images/liqpay-step6.png"><img alt="Step 6" src="../images/liqpay-step6.png" /></a></p>
-<h2 id="step-7-go-to-new-connection-page"><strong>Step 7: Go to "New connection" page</strong><a class="headerlink" href="#step-7-go-to-new-connection-page" title="Permanent link">&para;</a></h2>
-<p><a href="../images/liqpay-step7.png"><img alt="Step 7" src="../images/liqpay-step7.png" /></a></p>
-<h2 id="step-8-ensure-that-you-are-at-payment-providers-tab-and-find-liqpay-in-the-list"><strong>Step 8: Ensure that You are at "Payment Providers" tab and find LiqPay in the list</strong><a class="headerlink" href="#step-8-ensure-that-you-are-at-payment-providers-tab-and-find-liqpay-in-the-list" title="Permanent link">&para;</a></h2>
-<p><a href="../images/liqpay-step8.png"><img alt="Step 8" src="../images/liqpay-step8.png" /></a></p>
-<h2 id="step-9-open-connection-form"><strong>Step 9: Open connection form</strong><a class="headerlink" href="#step-9-open-connection-form" title="Permanent link">&para;</a></h2>
-<p><a href="../images/liqpay-step9.png"><img alt="Step 9" src="../images/liqpay-step9.png" /></a></p>
-<h2 id="step-10-enter-your-keys-choose-providers-currencies-save-connection-changes"><strong>Step 10: Enter your keys. Choose provider's currencies. Save connection changes</strong><a class="headerlink" href="#step-10-enter-your-keys-choose-providers-currencies-save-connection-changes" title="Permanent link">&para;</a></h2>
-<p><a href="../images/liqpay-step10.png"><img alt="Step 10" src="../images/liqpay-step10.png" /></a></p>
-<h2 id="success-you-have-connected-liqpay"><strong>Success! You have connected LiqPay!</strong><a class="headerlink" href="#success-you-have-connected-liqpay" title="Permanent link">&para;</a></h2>
-<p><a href="images/liqpay-success.png"><img alt="" src="images/liqpay-success.png" /></a></p>
+                <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
                 
                   
                 
@@ -607,7 +827,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../../hpp/overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../payout-gateway/overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -622,13 +842,13 @@
           </a>
         
         
-          <a href="../../../release-notes/" title="Release Notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../hpp/overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Release Notes
+                Overview
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

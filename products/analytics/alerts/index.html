@@ -739,18 +739,12 @@
     Get an Alert Upon Status Change
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#get-an-alert-everytime-the-query-runs" title="Get an Alert Everytime the Query Runs" class="md-nav__link">
     Get an Alert Everytime the Query Runs
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -941,6 +935,30 @@
   <li class="md-nav__item">
     <a href="../../currency-rates/overview/" title="Overview" class="md-nav__link">
       Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../currency-rates/resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../currency-rates/rate-schemes/" title="Rate Schemes" class="md-nav__link">
+      Rate Schemes
     </a>
   </li>
 
@@ -1635,18 +1653,12 @@
     Get an Alert Upon Status Change
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#get-an-alert-everytime-the-query-runs" title="Get an Alert Everytime the Query Runs" class="md-nav__link">
     Get an Alert Everytime the Query Runs
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1671,10 +1683,24 @@
                 
                 <h1 id="alerts">Alerts<a class="headerlink" href="#alerts" title="Permanent link">&para;</a></h1>
 <p>In the Alerts view, you’ll see all existing alerts.</p>
+<div class="admonition info">
+<p class="admonition-title">Screenshot</p>
+<p><a href="../images/alerts3.png"><img alt="Alerts" src="../images/alerts3.png" /></a></p>
+</div>
 <p>To set up a new alert you’ll need to follow next steps:</p>
 <ol>
-<li>First, go to Create &gt; Alert </li>
-<li>Select the query you want to trigger an alert for (just start typing). Note that queries with parameters won’t work.</li>
+<li>First, go to <strong><code>Create</code></strong> &gt; <strong><code>Alert</code></strong></li>
+<li>Select the query you want to trigger an alert for </li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Just start typing a query name and select one from dropdown list! </p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Note that queries <strong><em><code>with parameters</code></em></strong> won’t work.</p>
+</div>
+<ol>
 <li>Select the column you want to watch.</li>
 <li>
 <p>Select the trigger type </p>
@@ -1685,26 +1711,46 @@
 </ul>
 </li>
 <li>
-<p>Select your magic number</p>
+<p>Leave <strong><code>Rearm Seconds</code></strong> empty to get 1 alert when the status changes from <strong><code>Triggered</code></strong> to <strong><code>OK</code></strong>, enter a number to get an alert every time the query runs (by schedule) + the Rearm seconds value.</p>
 </li>
-<li>Leave <strong><code>Rearm Seconds</code></strong> empty to get 1 alert when the status changes from <strong><code>Triggered</code></strong> to <strong><code>OK</code></strong>, enter a number to get an alert every time the query runs (by schedule) + the Rearm seconds value.</li>
-<li>
-<p>Save, to confirm actions</p>
-</li>
-<li>
-<p>Define alert destinations - <em><code>email</code></em>, <em><code>Slack</code></em>, <em><code>Mattermost</code></em>, <em><code>HipChat</code></em> and webhooks are supported.</p>
-</li>
+<li>Save, to confirm actions</li>
+<li>Define alert destinations - choose alert destination point from dropdown list (<em><code>email</code></em> or another if it is supported)</li>
 </ol>
+<div class="admonition info">
+<p class="admonition-title">Screenshots</p>
+<p><a href="../images/alerts1.png"><img alt="Alerts" src="../images/alerts1.png" /></a>
+<a href="../images/alerts2.png"><img alt="Alerts" src="../images/alerts2.png" /></a></p>
+</div>
 <h2 id="alert-status-frequency">Alert Status &amp; Frequency<a class="headerlink" href="#alert-status-frequency" title="Permanent link">&para;</a></h2>
-<p>The Alert Status is checked every time the query is executed - (alerts only work with scheduled queries).</p>
+<p>The Alert Status is checked every time the query is executed.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Alerts only work with scheduled queries.</p>
+</div>
 <p>Alerts have <strong><em>3 Status Types</em></strong>:</p>
-<p><strong><code>TRIGGERED</code></strong> - the value you set the alert for is triggered (if you set your alert to trigger when the value of “cats” is greater than 1500 as long as it’s above 1500 your alert is triggered)</p>
-<p><strong><code>OK</code></strong> - the value you have set to trigger the alert is not reached for now (might happen after the alert was triggered or before it was ever triggered, if your “cats” value is now 1470 your alert will show as OK)</p>
+<ul>
+<li>
+<p><strong><code>TRIGGERED</code></strong> - the value you set the alert for is triggered </p>
+<div class="admonition info">
+<p class="admonition-title">Example</p>
+<p>If you set your alert to trigger when the value of “Account balance” <strong>is less</strong> than 100 000 as long as it’s above 100 000 your alert is triggered!</p>
+</div>
+</li>
+<li>
+<p><strong><code>OK</code></strong> - the value you have set to trigger the alert is not reached for now </p>
+<div class="admonition info">
+<p class="admonition-title">Example</p>
+<p>Might happen after the alert was triggered or before it was ever triggered, if your “Account balance” value is now 100 500 your alert will show as OK!</p>
+</div>
+</li>
+<li>
 <p><strong><code>UNKNOWN</code></strong> - you should see this status once you have set your alert and it wasn’t yet checked. To make your alert in the know, run the query it is linked to after setting the alert.</p>
+</li>
+</ul>
 <h2 id="get-an-alert-upon-status-change">Get an Alert Upon Status Change<a class="headerlink" href="#get-an-alert-upon-status-change" title="Permanent link">&para;</a></h2>
-<p>If you leave the REARM value empty alerts will only be sent when the status changes (from OK to Triggered or vice versa).</p>
-<h3 id="get-an-alert-everytime-the-query-runs">Get an Alert Everytime the Query Runs<a class="headerlink" href="#get-an-alert-everytime-the-query-runs" title="Permanent link">&para;</a></h3>
-<p>To get an alert every time the query runs, set the <strong><code>REARM</code></strong> value - the value is for seconds that pass since the system detects a change until it sends the alert, a 1-minute “delay” would require entering ‘60’ in the REARM field.</p>
+<p>If you leave the <strong><code>REARM</code></strong> value empty alerts will only be sent when the status changes.</p>
+<h2 id="get-an-alert-everytime-the-query-runs">Get an Alert Everytime the Query Runs<a class="headerlink" href="#get-an-alert-everytime-the-query-runs" title="Permanent link">&para;</a></h2>
+<p>To get an alert every time the query runs, set the <strong><code>REARM</code></strong> value - the value is for seconds that pass since the system detects a change until it sends the alert, a 1-minute “delay” would require entering ‘60’ in the <strong><code>REARM</code></strong> field.</p>
                 
                   
                 

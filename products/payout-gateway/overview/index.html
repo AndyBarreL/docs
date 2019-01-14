@@ -606,6 +606,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../getting-started/api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../ips/" title="Public IPs" class="md-nav__link">
       Public IPs
     </a>
@@ -853,9 +865,52 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Overview
+      </label>
+    
     <a href="./" title="Overview" class="md-nav__link md-nav__link--active">
       Overview
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#payout-operation" title="Payout operation" class="md-nav__link">
+    Payout operation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payout-request-operation" title="Payout request operation" class="md-nav__link">
+    Payout request operation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-first-payout-request" title="Create first payout request" class="md-nav__link">
+    Create first payout request
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1595,6 +1650,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#payout-operation" title="Payout operation" class="md-nav__link">
+    Payout operation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payout-request-operation" title="Payout request operation" class="md-nav__link">
+    Payout request operation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-first-payout-request" title="Create first payout request" class="md-nav__link">
+    Create first payout request
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1609,6 +1694,45 @@
                 
                 
                 <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<p>Payout gateway is part of system that implements withdrawal operations. It based on two operations: payout and payout request. </p>
+<h3 id="payout-operation">Payout operation<a class="headerlink" href="#payout-operation" title="Permanent link">&para;</a></h3>
+<p>This operation is responsible for communication with external provider. It is the low level operation that responsible for status mapping, processed amount calculation.</p>
+<h3 id="payout-request-operation">Payout request operation<a class="headerlink" href="#payout-request-operation" title="Permanent link">&para;</a></h3>
+<p>This operation has many features that make payout processing simpler:
+1. Exchange rates
+1. Failover
+1. Splitting </p>
+<p>It creates payout operation under the hood during processing. </p>
+<h3 id="create-first-payout-request">Create first payout request<a class="headerlink" href="#create-first-payout-request" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Create <a href="https://dashboard.paycore.io/payout-gateway/payout-points" target="_blank" rel="noopener">payout point</a> with desired currencies </li>
+<li>Connect test <a href="https://dashboard.paycore.io/connect-directory/payment-providers/test/general" target="_blank" rel="noopener">provider account</a></li>
+<li>Create <a href="https://dashboard.paycore.io/organization/settings/api-keys" target="_blank" rel="noopener">API key</a></li>
+</ol>
+<p>All operation in Paycore.io have test mode. After connecting test provider you can create only test operations. Production operations could be created only after successful connection one of <a href="../../../payment-providers/">available providers</a>. </p>
+<div class="codehilite"><pre><span></span>POST /v1/payout-gateway/payout-requests HTTP/1.1
+Host: api.paycore.io
+Content-Type: application/json
+
+{
+  &quot;data&quot;: {
+    &quot;type&quot;: &quot;payout-request&quot;,
+    &quot;attributes&quot;: {
+      &quot;point_amount&quot;: 1,
+        &quot;point_id&quot;: &quot;pop_SHZxNhPrDHtCf8hH&quot;,
+      &quot;point_currency&quot;: &quot;USD&quot;,
+      &quot;service&quot;: &quot;test_usd&quot;,
+      &quot;test_mode&quot;: true,
+      &quot;fields&quot;: {
+          &quot;account&quot;:&quot;some_random_string&quot;
+      }
+    }
+  }
+}
+</pre></div>
+
+
+<p>Full list of properties available <a href="https://apidoc.paycore.io/#tag/Payout-gateway/paths/~1payout-gateway~1payout-requests/post" target="_blank" rel="noopener">here</a>. Content of <strong>fields</strong> must be set according to payout-service. List of available payout services can be found in <a href="https://dashboard.paycore.io/payout-gateway/payout-routes" target="_blank" rel="noopener">dashboard</a> in column <strong>service</strong>. Payout service fields can be found on <a href="https://dashboard.paycore.io/connect-directory/payout-services" target="_blank" rel="noopener">services page</a> in overview.</p>
                 
                   
                 
@@ -1666,7 +1790,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © 2018 PayCore.io. All Rights Reserved.
+            © 2018-2019 PayCore.io. All Rights Reserved.
           </div>
         
         <a href="https://paycore.io/privacy/">Terms and Conditions</a>
